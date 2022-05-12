@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <head>
   <link rel="stylesheet" href="./index.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script>
-      /* loop and unmute */
-    $(document).ready(function () {
-      setTimeout(function () {
-        var video = document.getElementById("amogus");
-        video.muted = !video.muted;
-        video.volume = 0.5;
-      }, 2000);
-    });
-  </script>
 </head>
 <body>
-<video autoplay loop id="amogus">
-    <source src="./amogus.mp4" type="video/mp4">
-</video>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    setTimeout(function () {
+      var video = document.getElementById("amogus");
+      video.muted = !video.muted;
+      video.volume = 0.5;
+    }, 2000);
+  });
+</script>
+  <video loop autoplay muted id="amogus">
+    <source src="./amogus.mp4" type="video/mp4" />
+  </video>
   <div class="centertext">
-    <h1>Hi. this is supposed to be my "about me" page but I haven't finished it yet. <br>Instead, take this horrible video.</h1>
+    <h1>
+      Hi. this is supposed to be my "about me" page but I haven't finished it
+      yet. <br />Instead, take this horrible video.
+    </h1>
   </div>
 </body>
