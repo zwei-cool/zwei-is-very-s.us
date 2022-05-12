@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <head>
   <link rel="stylesheet" href="./index.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+      /* loop and unmute */
+    $(document).ready(function () {
+      setTimeout(function () {
+        var video = document.getElementById("amogus");
+        video.muted = !video.muted;
+        video.volume = 0.5;
+      }, 2000);
+    });
+  </script>
 </head>
 <body>
 <video autoplay loop id="amogus">
